@@ -11,7 +11,6 @@ class PostsController < ApplicationController
         @posts = Post.old_news
       end
     else
-      # if no filters are applied, show all posts
       @posts = Post.all
     end
   end
